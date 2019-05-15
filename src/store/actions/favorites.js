@@ -8,4 +8,9 @@ const addFavoriteSuccess = data => ({
   payload: { data },
 });
 
-export { addFavoriteRequest, addFavoriteSuccess };
+const addFavoriteFailure = error => ({
+  type: 'ADD_FAVORITE_FAILURE',
+  payload: { error },
+});
+
+export { addFavoriteRequest, addFavoriteSuccess, addFavoriteFailure };
